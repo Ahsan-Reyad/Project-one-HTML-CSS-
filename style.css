@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.main-div {
+  height: 100%;
+  width: 100%;
+  background-color: gray;
+}
+.nav {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  align-items: center;
+  background-color: white;
+  padding: 0px 30px;
+}
+.nav h4 {
+  font-size: 25px;
+  font-weight: 600;
+}
+.nav i {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.center {
+  width: 100%;
+  background-color: rgb(34, 119, 86);
+  padding: 40px 80px;
+}
+.center h1 {
+  font-size: 4.1vw;
+  font-weight: 500;
+  line-height: 4vw;
+}
+
+.center-pera {
+  display: flex;
+  justify-content: space-between;
+  height: 200px;
+  width: 100%;
+  margin-top: 50px;
+}
+.center-pera-text {
+  font-size: 1.5vw;
+  font-weight: 500;
+  line-height: 1.8vw;
+}
+.center-right {
+  width: 20%;
+}
+.element {
+  display: flex;
+  justify-content: space-between;
+  padding: 18px 0;
+  border-top: 2px solid black;
+}
+.element a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+}
+.element i {
+  font-size: 25px;
+  font-weight: 500;
+  opacity: 0;
+}
+.element:hover i {
+  opacity: 1;
+}
+.element:hover a {
+  text-decoration: underline;
+}
+
+.bottom {
+  height: 35%;
+  width: 100%;
+  background: url(assets/bannar2.jpg);
+  background-size: cover;
+  background-position: 0 30%;
+}
+
+@media (max-width: 600px) {
+  .nav {
+    height: 60px;
+    width: 100%;
+
+    gap: 20px;
+
+    background-color: white;
+    padding: 0px 20px;
+  }
+  .nav h4 {
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .nav i {
+    background-color: black;
+    color: white;
+    padding: 7px;
+    border-radius: 50%;
+    font-weight: 600;
+    font-size: 12px;
+  }
+  .center {
+    width: 100%;
+    background-color: rgb(34, 119, 86);
+    padding: 15px 20px;
+  }
+  .center h1 {
+    font-size: 10vw;
+    font-weight: 500;
+    line-height: 10vw;
+  }
+
+  .center-pera {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+    height: 200px;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .center-pera-text {
+    font-size: 4vw;
+    font-weight: 500;
+    line-height: 4.5vw;
+  }
+  .center-right {
+    width: 100%;
+  }
+  .element {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-top: 1px solid black;
+  }
+  .element a {
+    color: #303033;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .element i {
+    font-size: 18px;
+    font-weight: 500;
+    opacity: 1;
+    color: #303033;
+  }
+  .element:hover i {
+    opacity: 1;
+  }
+  .element:hover a {
+    text-decoration: underline;
+  }
+  .bottom {
+    height: 37%;
+    width: 100%;
+    background: url(assets/mobile-banar.jpg);
+    background-size: cover;
+    background-position: 0 50%;
+  }
+}
